@@ -8,6 +8,7 @@ def input_array_to_fourier_features(x, B):
     Params:
     x - A numpy array containing input features into a model e.g 3D coordinates would be of size (N,M) where M=3
     B - A random 'tall skinny' matrix such as from a gaussian distribution e.g np.random.normal(size=(K,M)) where K can be 256
+        note: Use the same B for model training and testing to get correct results.
 
     M features are mapped to K features. In the example above 3 features (x,y,z) will be mapped to 256 high-dimensional features.
 
